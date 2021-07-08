@@ -47,9 +47,9 @@ class Watcher(object):
             if line.startswith('AWS_ACCESS_KEY_ID'):
                 contents = contents + "AWS_ACCESS_KEY_ID=" + aws_access_key_id
             elif line.startswith('AWS_SECRET_ACCESS_KEY'):
-                contents = contents + "AWS_SECRET_ACCESS_KEY" + aws_secret_access_key
+                contents = contents + "AWS_SECRET_ACCESS_KEY=" + aws_secret_access_key
             elif line.startswith('AWS_SESSION_TOKEN'):
-                contents = contents + "AWS_SESSION_TOKEN" + aws_session_token
+                contents = contents + "AWS_SESSION_TOKEN=" + aws_session_token
             else:
                 contents = contents + line
 
